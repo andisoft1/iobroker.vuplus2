@@ -1,109 +1,122 @@
 {
-	"common": {
-		"name": "vuplus2",
-		"version": "0.0.1",
-		"news": {
-			"0.0.1": {
-				"en": "initial release",
-				"de": "Erstveröffentlichung",
-				"ru": "Начальная версия",
-				"pt": "lançamento inicial",
-				"nl": "Eerste uitgave",
-				"fr": "Première version",
-				"it": "Versione iniziale",
-				"es": "Versión inicial",
-				"pl": "Pierwsze wydanie",
-				"uk": "Початкова версія",
-				"zh-cn": "首次出版"
-			}
-		},
-		"title": "VuPlus2 Controller",
-		"titleLang": {
-			"en": "VuPlus2 Controller",
-			"de": "VuPlus2-Controller",
-			"ru": "Контроллер VuPlus2",
-			"pt": "Controlador VuPlus2",
-			"nl": "VuPlus2-controller",
-			"fr": "Contrôleur VuPlus2",
-			"it": "Controllore VuPlus2",
-			"es": "Controlador VuPlus2",
-			"pl": "Kontroler VuPlus2",
-			"uk": "Контролер VuPlus2",
-			"zh-cn": "VuPlus2 控制器"
-		},
-		"desc": {
-			"en": "VuPlus Controller",
-			"de": "VuPlus-Controller",
-			"ru": "Контроллер ВуПлюс",
-			"pt": "Controlador VuPlus",
-			"nl": "VuPlus-controller",
-			"fr": "Contrôleur VuPlus",
-			"it": "Controllore VuPlus",
-			"es": "Controlador VuPlus",
-			"pl": "Kontroler VuPlus",
-			"uk": "Контролер VuPlus",
-			"zh-cn": "VuPlus 控制器"
-		},
-		"authors": [
-			"Andisoft <andisoft1@gmx.de>"
-		],
-		"keywords": [
-			"vuplus vubox enigma2"
-		],
-		"license": "MIT",
-		"platform": "Javascript/Node.js",
-		"main": "build/main.js",
-		"icon": "vuplus2.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/andisoft1/ioBroker.vuplus2/main/admin/vuplus2.png",
-		"readme": "https://github.com/andisoft1/ioBroker.vuplus2/blob/main/README.md",
-		"loglevel": "info",
-		"tier": 3,
-		"mode": "daemon",
-		"type": "multimedia",
-		"compact": true,
-		"connectionType": "local",
-		"dataSource": "poll",
-		"adminUI": {
-			"config": "json"
-		},
-		"dependencies": [
-			{
-				"js-controller": ">=3.3.22"
-			}
-		],
-		"globalDependencies": [
-			{
-				"admin": ">=5.1.13"
-			}
-		]
-	},
-	"native": {
-		"option1": true,
-		"option2": "42"
-	},
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "info",
-			"type": "channel",
-			"common": {
-				"name": "Information"
-			},
-			"native": {}
-		},
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+  "common": {
+    "name": "vuplus2",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "initial release",
+        "de": "erstausstrahlung",
+        "ru": "первоначальный выпуск",
+        "pt": "lançamento inicial",
+        "nl": "eerste release",
+        "fr": "libération initiale",
+        "it": "rilascio iniziale",
+        "es": "liberación inicial",
+        "pl": "początkowe zwolnienie",
+        "uk": "початковий реліз",
+        "zh-cn": "初步释放"
+      },
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "uk": "Початкова версія",
+        "zh-cn": "首次出版"
+      }
+    },
+    "title": "VuPlus2 Controller",
+    "titleLang": {
+      "en": "VuPlus2 Controller",
+      "de": "VuPlus2-Controller",
+      "ru": "Контроллер VuPlus2",
+      "pt": "Controlador VuPlus2",
+      "nl": "VuPlus2-controller",
+      "fr": "Contrôleur VuPlus2",
+      "it": "Controllore VuPlus2",
+      "es": "Controlador VuPlus2",
+      "pl": "Kontroler VuPlus2",
+      "uk": "Контролер VuPlus2",
+      "zh-cn": "VuPlus2 控制器"
+    },
+    "desc": {
+      "en": "VuPlus Controller",
+      "de": "VuPlus-Controller",
+      "ru": "Контроллер ВуПлюс",
+      "pt": "Controlador VuPlus",
+      "nl": "VuPlus-controller",
+      "fr": "Contrôleur VuPlus",
+      "it": "Controllore VuPlus",
+      "es": "Controlador VuPlus",
+      "pl": "Kontroler VuPlus",
+      "uk": "Контролер VuPlus",
+      "zh-cn": "VuPlus 控制器"
+    },
+    "authors": [
+      "Andisoft <andisoft1@gmx.de>"
+    ],
+    "keywords": [
+      "vuplus vubox enigma2"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "build/main.js",
+    "icon": "vuplus2.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/andisoft1/ioBroker.vuplus2/main/admin/vuplus2.png",
+    "readme": "https://github.com/andisoft1/ioBroker.vuplus2/blob/main/README.md",
+    "loglevel": "info",
+    "tier": 3,
+    "mode": "daemon",
+    "type": "multimedia",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.1.13"
+      }
+    ]
+  },
+  "native": {
+    "option1": true,
+    "option2": "42"
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
