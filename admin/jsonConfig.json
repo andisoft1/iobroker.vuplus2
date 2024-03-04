@@ -2,15 +2,30 @@
 	"i18n": true,
 	"type": "panel",
 	"items": {
-		"option1": {
-			"type": "checkbox",
-			"label": "option1",
+		"IPAddress": {
+			"type": "text",
+			"label": "IPAddress",
 			"newLine": true
 		},
-		"option2": {
+		"Username": {
 			"type": "text",
-			"label": "option2",
+			"label": "Username",
 			"newLine": true
-		}
+		},
+		"Password": {
+			"type": "text",
+			"label": "Password",
+			"newLine": true
+		},
+		"PollingInterval": {
+			"type": "number",
+			"label": "PollingInterval",
+			"newLine": true
+		},
+		"EnigmaLightPort": {
+			"type": "number",
+			"label": "EnigmaLightPort",
+			"newLine": true
+		},
 	}
 }
